@@ -19,7 +19,7 @@ pacman::p_load(pacman, tidyverse)
 
 ?mtcars
 head(mtcars)
-cars <- mtcars[, c(1:4, 6:7, 9:11)]  # Select variables
+cars <- mtcars[, c(1:4, 6:7, 9:11)]  # Select variables; columns 1, 2, 3, 4; skip 5; 6, 7; skip 8; 9, 10, 11
 head(cars)
 
 # COMPUTE AND PLOT CLUSTERS ################################

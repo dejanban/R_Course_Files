@@ -26,7 +26,7 @@ hist(lynx,
      freq   = FALSE,       # Axis shows density, not freq.
      col    = "thistle1",  # Color for histogram
      main   = paste("Histogram of Annual Canadian Lynx",
-                    "Trappings, 1821-1934"),
+                    "Trappings, 1821-1934"), #using paste because it's long title
      xlab   = "Number of Lynx Trapped")
 
 # Add a normal distribution
@@ -40,7 +40,7 @@ lines(density(lynx), col = "blue", lwd = 2)
 lines(density(lynx, adjust = 3), col = "purple", lwd = 2)
 
 # Add a rug plot
-rug(lynx, lwd = 2, col = "gray")
+rug(lynx, lwd = 2, col = "gray") #bar density
 
 # CLEAN UP #################################################
 

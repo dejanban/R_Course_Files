@@ -22,8 +22,8 @@ head(USJudgeRatings)
 data <- USJudgeRatings
 
 # Define variable groups
-x <- as.matrix(data[, -12])
-y <- data[, 12]
+x <- as.matrix(data[, -12]) # -12 - read all of the columns except 12
+y <- data[, 12] # read only 12 column
 
 # REGRESSION WITH SIMULTANEOUS ENTRY #######################
 
@@ -48,9 +48,9 @@ resid(reg1)            # Residuals case-by-case
 hist(residuals(reg1))  # Histogram of residuals
 
 # ADDITIONAL MODELS ########################################
-
+help(lars)
 # Conventional stepwise regression
-stepwise <- lars(x, y, type = "stepwise")
+stepwise <- lars(x, y, type = "stepwise") #least angle regression
 
 # Stagewise: Like stepwise but with better generalizability
 forward <- lars(x, y, type = "forward.stagewise")

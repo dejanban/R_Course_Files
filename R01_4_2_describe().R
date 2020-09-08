@@ -29,7 +29,7 @@ p_help(psych, web = F)  # Opens help in R Viewer
 
 # For quantitative variables only.
 
-describe(iris$Sepal.Length)  # One quantitative variable
+describe(iris$Sepal.Length)  # One quantitative variable - return: vars, n mean, sd, median, trimmed, mad, min, max, range, skew, kurtosis, se
 describe(iris)               # Entire data frame
 
 # CLEAN UP #################################################

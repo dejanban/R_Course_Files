@@ -11,7 +11,7 @@
 (y  <- 1:9)
 
 # Combine variables
-(df1 <- cbind.data.frame(x1, y))
+(df1 <- cbind.data.frame(x1, y)) #return two rows of data same length
 typeof(df1$x1)
 str(df1)
 
@@ -62,3 +62,4 @@ rm(list = ls())
 cat("\014")  # ctrl+L
 
 # Clear mind :)
+

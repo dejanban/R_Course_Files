@@ -41,7 +41,7 @@ typeof(l2)
 
 ## Vector ##################################################
 
-v1 <- c(1, 2, 3, 4, 5)
+v1 <- c(1, 2, 3, 4, 5) # c - concatenate 
 v1
 is.vector(v1)
 
@@ -55,7 +55,7 @@ is.vector(v3)
 
 ## Matrix ##################################################
 
-m1 <- matrix(c(T, T, F, F, T, F), nrow = 2)
+m1 <- matrix(c(T, T, F, F, T, F), nrow = 2) #nrow - how many rows
 m1
 
 m2 <- matrix(c("a", "b", 
@@ -66,7 +66,7 @@ m2
 
 ## Array ###################################################
 
-# Give data, then dimemensions (rows, columns, tables)
+# c(Give data), c(then dimemensions (rows, columns, tables))
 a1 <- array(c( 1:24), c(4, 3, 2))
 a1
 
@@ -102,7 +102,7 @@ list2
 
 # Goes to "least restrictive" data type
 
-(coerce1 <- c(1, "b", TRUE))
+(coerce1 <- c(1, "b", TRUE)) #if all in () than automaticly show result
 # coerce1  # Parenthese around command above make this moot
 typeof(coerce1)
 

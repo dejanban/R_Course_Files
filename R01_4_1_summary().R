@@ -15,9 +15,9 @@ head(iris)
 
 # SUMMARY() ################################################
 
-summary(iris$Species)       # Categorical variable
-summary(iris$Sepal.Length)  # Quantitative variable
-summary(iris)               # Entire data frame
+summary(iris$Species)       # Categorical variable - summary = povzetek
+summary(iris$Sepal.Length)  # Quantitative variable - return Min., 1st Qu., Median, Mean 3rd Qu, Max.
+summary(iris)               # Entire data frame - return Min., 1st Qu., Median, Mean 3rd Qu, Max.
 
 # CLEAN UP #################################################
 

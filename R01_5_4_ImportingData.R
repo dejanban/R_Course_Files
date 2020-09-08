@@ -25,15 +25,15 @@ browseURL("http://j.mp/2aFZUrJ")
 # IMPORTING WITH RIO #######################################
 
 # CSV
-rio_csv <- import("~/Desktop/mbb.csv")
+rio_csv <- import("C:/Users/Dejan B/Documents/projects/R/R01_Course_Files/R01_Course_Files/R01_5_4_ImportingData_Datasets/mbb.csv")
 head(rio_csv)
 
 # TXT
-rio_txt <- import("~/Desktop/mbb.txt")
+rio_txt <- import("C:/Users/Dejan B/Documents/projects/R/R01_Course_Files/R01_Course_Files/R01_5_4_ImportingData_Datasets/mbb.txt")
 head(rio_txt)
 
 # Excel XLSX
-rio_xlsx <- import("~/Desktop/mbb.xlsx")
+rio_xlsx <- import("C:/Users/Dejan B/Documents/projects/R/R01_Course_Files/R01_Course_Files/R01_5_4_ImportingData_Datasets/mbb.xlsx")
 head(rio_xlsx)
 
 # DATA VIEWER ##############################################
@@ -51,12 +51,12 @@ View(rio_csv)
 # text file. Need to give complete address to file. This
 # command gives an error on missing data but works on
 # complete data.
-r_txt1 <- read.table("~/Desktop/mbb.txt", header = TRUE)
+r_txt1 <- read.table("C:/Users/Dejan B/Documents/projects/R/R01_Course_Files/R01_Course_Files/R01_5_4_ImportingData_Datasets/mbb.txt", header = TRUE)
 
 # This works with missing data by specifying the separator: 
 # \t is for tabs, sep = "," for commas. R converts missing
 # to "NA"
-r_txt2 <- read.table("~/Desktop/mbb.txt", 
+r_txt2 <- read.table("C:/Users/Dejan B/Documents/projects/R/R01_Course_Files/R01_Course_Files/R01_5_4_ImportingData_Datasets/mbb.txt", 
   header = TRUE, 
   sep = "\t")
 
@@ -67,7 +67,7 @@ r_txt2 <- read.table("~/Desktop/mbb.txt",
 # CSV FILES
 # Don't have to specify delimiters for missing data
 # because CSV means "comma separated values"
-trends.csv <- read.csv("~/Desktop/mbb.csv", header = TRUE)
+trends.csv <- read.csv("C:/Users/Dejan B/Documents/projects/R/R01_Course_Files/R01_Course_Files/R01_5_4_ImportingData_Datasets/mbb.csv", header = TRUE)
 
 # CLEAN UP #################################################
 

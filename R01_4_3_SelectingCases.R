@@ -37,13 +37,13 @@ hist(iris$Petal.Length[iris$Species == "setosa"],
 # SELECT BY VALUE ##########################################
 
 # Short petals only (all Setosa)
-hist(iris$Petal.Length[iris$Petal.Length < 2],
+hist(iris$Petal.Length[iris$Petal.Length < 2], #values less than 2
   main = "Petal Length < 2")
 
 # MULTIPLE SELECTORS #######################################
 
 # Short Virginica petals only
-hist(iris$Petal.Length[iris$Species == "virginica" & 
+hist(iris$Petal.Length[iris$Species == "virginica" & # & - and
   iris$Petal.Length < 5.5],
   main = "Petal Length: Short Virginica")
 
